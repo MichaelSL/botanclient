@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 /src/BotanClient.Web/wwwroot/lib/
 /src/BotanClient.Web/wwwroot/**/*.min.*
+/.vscode/
