@@ -8,7 +8,7 @@ namespace BotanClient.Models
     public class BotanCommandMessage: BotanMessage
     {
         public string CommandName { get; set; }
-        public IList<string> CommandArguments { get; set; }
+        public IEnumerable<string> CommandArguments { get; set; }
 
         public override string ToString()
         {

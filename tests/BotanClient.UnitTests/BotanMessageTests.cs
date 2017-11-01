@@ -22,5 +22,18 @@ namespace BotanClient.UnitTests
             var stringifiedData = message.ToString();
             Assert.Equal(JsonConvert.SerializeObject(new { Test = "Test" }), stringifiedData);
         }
+
+        [Fact]
+        public void TestNullserialization()
+        {
+            BotanMessage message = new BotanMessage
+            {
+                EventName = "Test1",
+                RawData = null,
+                Uid = "Test1"
+            };
+            var stringifiedData = message.ToString();
+            Assert.Equal(JsonConvert.SerializeObject(null), stringifiedData);
+        }
     }
 }
