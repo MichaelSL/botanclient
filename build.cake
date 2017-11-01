@@ -33,6 +33,12 @@ Task("Default")
    Information("Hello Cake!");
 });
 
+Task("BotanClient")
+.IsDependentOn("BotanClient_NuGetPack")
+.Does(() => {
+    Information("Botan Client build started");
+});
+
 Task("BotanClient_Build")
 .Does(() => {
     DotNetCoreBuild("src/BotanClient/BotanClient.csproj");
