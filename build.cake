@@ -36,7 +36,7 @@ Task("Default")
 Task("BotanClient")
 .IsDependentOn("BotanClient_NuGetPack")
 .Does(() => {
-    Information("Botan Client build started");
+    Information("Botan Client build finished");
 });
 
 Task("BotanClient_Build")
