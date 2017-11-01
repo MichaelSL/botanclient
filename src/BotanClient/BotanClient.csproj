@@ -3,6 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>0.1.1</Version>
+    <PackageId>BotanClient</PackageId>
+    <Authors>MichaelSL</Authors>
+    <PackageProjectUrl>https://github.com/MichaelSL/botanclient</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MichaelSL/botanclient</RepositoryUrl>
+    <PackageIconUrl>https://ibb.co/mj0pnb</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/MichaelSL/botanclient/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>
+      Yandex Metrica Botan bot analitycs client for NET.
+      Designed fot Telegram bots.
+    </Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>1.0 - Initial version</PackageReleaseNotes>
+    <PackageTags>Botan Telegram Yandex monitoring</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
