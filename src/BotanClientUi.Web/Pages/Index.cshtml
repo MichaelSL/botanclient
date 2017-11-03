@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Event tracking</h2>
+        <div>
+            <div class="form-group">
+                <input type="text" id="eventName" name="eventName" value="" placeholder="Event Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="userId" name="userId" value="" placeholder="User Id" class="form-control" />
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="rawData" name="rawData"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="btnTrackEvent" class="btn btn-default">Track Event</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h2>Url shortener</h2>
+        <div>
+            <div class="form-group">
+                <input type="text" id="url" name="url" value="" placeholder="URL" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="urlUserId" name="urlUserId" value="" placeholder="User Id" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button id="btnShortenUrl" class="btn btn-default">Shorten URL</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="divRes" class="col-md-12 jumbotron">
+
+        </div>
+    </div>
