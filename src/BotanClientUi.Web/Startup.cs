@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BotanClient.Web
+namespace BotanClientUi.Web
 {
     public class Startup
     {
@@ -22,6 +22,9 @@ namespace BotanClient.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            var apiKey = Configuration.GetValue<string>("BotanApiKey");
+            services.AddSingleton(_ => new BotanClient.BotanClient(apiKey));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

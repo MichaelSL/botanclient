@@ -40,9 +40,9 @@ namespace BotanClient
             return botanResponse;
         }
 
-        public async Task<string> ShortedUrl(string url, IEnumerable<string> userIds)
+        public async Task<string> ShortenUrl(string url, IEnumerable<string> userIds)
         {
-            var requestUrl = String.Format(BOTAN_URL_SHORTENER_URI, ApiKey, url, String.Join(",", userIds));
+            var requestUrl = String.Format(BOTAN_URL_SHORTENER_URI, ApiKey, Uri.EscapeDataString(url), String.Join(",", userIds));
             var response = await httpClient.GetAsync(requestUrl);
             
             response.EnsureSuccessStatusCode();

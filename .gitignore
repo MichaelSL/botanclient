@@ -264,3 +264,6 @@ __pycache__/
 /.vscode/
 /tools/*
 !/tools/packages.config
+/src/BotanClientUi.Web/wwwroot/lib/*
+/src/BotanClientUi.Web/wwwroot/**/*.min.*
+/src/BotanClientUi.Web/appsettings.Development.json
