@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BotanClient
 {
-    public class BotanClient
+    public class BotanClient : IBotanClient
     {
         private readonly HttpClient httpClient = new HttpClient();
         private readonly string ApiKey;
