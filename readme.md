@@ -1,5 +1,7 @@
 # Yandex Metrica Botan client
 
+:warning: The [Botan](https://github.com/botanio/sdk) service has been shut down. This repository is archived now. :warning:
+
 Yandex Metrica Botan client for .NET
 `NETStandard 2.0`
 
